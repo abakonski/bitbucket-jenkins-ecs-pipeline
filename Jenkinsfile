@@ -102,7 +102,7 @@ node {
     }
     catch (Exception err) {
         // Slack notification:
-        slackSend color: '#f00', message: '[API Staging] Deployment failed! ('+err.message+')'
+        slackSend color: '#f00', message: '[flask-app] Deployment failed! ('+err.message+')'
         
         throw err
     }
