@@ -1,0 +1,26 @@
+{
+    "containerDefinitions": [
+        {
+            "entryPoint": [],
+            "portMappings": [
+                {
+                    "hostPort": 0,
+                    "protocol": "tcp",
+                    "containerPort": 80
+                }
+            ],
+            "command": [],
+            "cpu": 0,
+            "environment": [],
+            "memory": 500,
+            "volumesFrom": [],
+            "image": "xxxxxxxxxxxx.dkr.ecr.us-west-1.amazonaws.com/flask-app:%BUILD_NUMBER%",
+            "essential": true,
+            "links": [],
+            "privileged": true,
+            "name": "flask-app"
+        }
+    ],
+    "placementConstraints": [],
+    "family": "flask-app-task"
+}
